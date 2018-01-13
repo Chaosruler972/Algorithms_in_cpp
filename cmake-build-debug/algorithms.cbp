@@ -85,6 +85,12 @@
 		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/main.cpp">
 			<Option target="algorithms"/>
 		</Unit>
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/my_vector.cpp">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/my_vector.h">
+			<Option target="algorithms"/>
+		</Unit>
 		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

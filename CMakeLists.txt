@@ -3,4 +3,4 @@ project(algorithms)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(algorithms main.cpp)
+add_executable(algorithms main.cpp my_vector.cpp my_vector.h)
