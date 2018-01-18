@@ -1,5 +1,6 @@
 
 #pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCUnusedStructInspection"
 #pragma ide diagnostic ignored "OCUnusedGlobalDeclarationInspection"
 #ifndef ALGORITHMS_VECTOR_H
 #define ALGORITHMS_VECTOR_H
@@ -46,15 +47,11 @@ public:
 
     bool removeElement1Time(T value);
 
-    int indexOf(T value) const;
+    int indexOf(const T &value) const;
 
     bool removeAllElements(T value);
 
     bool swap(unsigned int index1, unsigned int index2);
-
-    bool operator==(const my_vector<T> &rhs) const;
-
-    bool operator!=(const my_vector<T> &rhs) const;
 
     bool operator<(const my_vector<T> &rhs) const;
 

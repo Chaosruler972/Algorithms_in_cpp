@@ -94,9 +94,11 @@ my_vector<T>::~my_vector() {
 
     for (int i = 0; i < this->_size; i++) {
         delete this->_arr[i];
+        this->_arr[i] = nullptr;
     }
 
     delete[] this->_arr;
+    this->_arr = nullptr;
 }
 
 template<class T>
@@ -114,6 +116,7 @@ bool my_vector<T>::removeAtIndex(unsigned int index) {
     if (index >= this->_size)
         return false;
     delete this->_arr[index];
+    this->_arr[index] = nullptr;
     for (auto i = index; i < this->_size - 1; i++) {
         this->_arr[i] = this->_arr[i + 1];
     }
@@ -141,7 +144,7 @@ bool my_vector<T>::removeElement1Time(T value) {
 }
 
 template<class T>
-int my_vector<T>::indexOf(T value) const {
+int my_vector<T>::indexOf(const T &value) const {
     for (auto i = 0; i < this->_size; i++) {
         if ((*this)[i] == value)
             return i;
@@ -170,21 +173,6 @@ bool my_vector<T>::swap(unsigned int index1, unsigned int index2) {
     return false;
 }
 
-
-template<class T>
-bool my_vector<T>::operator==(const my_vector<T> &rhs) const {
-    for (T value: *this) {
-        if (rhs.indexOf(value) == -1)
-            return true;
-    }
-    return false;
-
-}
-
-template<class T>
-bool my_vector<T>::operator!=(const my_vector<T> &rhs) const {
-    return !(rhs == *this);
-}
 
 template<class T>
 bool my_vector<T>::operator<(const my_vector<T> &rhs) const {

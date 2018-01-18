@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/algorithms.dir/main.cpp.o CMakeFiles/algorithms.dir/my_vector.cpp.o  -o algorithms 
+/usr/bin/c++  -g   CMakeFiles/algorithms.dir/main.cpp.o CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o  -o algorithms -pthread 

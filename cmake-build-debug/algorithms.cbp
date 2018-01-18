@@ -82,13 +82,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.cpp">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.h">
+			<Option target="algorithms"/>
+		</Unit>
 		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/main.cpp">
 			<Option target="algorithms"/>
 		</Unit>
-		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/my_vector.cpp">
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.cpp">
 			<Option target="algorithms"/>
 		</Unit>
-		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/my_vector.h">
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.h">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.cpp">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.h">
 			<Option target="algorithms"/>
 		</Unit>
 		<Unit filename="/home/chaosruler/Desktop/Algorithms_in_cpp/CMakeLists.txt">

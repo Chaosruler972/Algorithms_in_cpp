@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.cpp" "/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o"
   "/home/chaosruler/Desktop/Algorithms_in_cpp/main.cpp" "/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles/algorithms.dir/main.cpp.o"
-  "/home/chaosruler/Desktop/Algorithms_in_cpp/my_vector.cpp" "/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles/algorithms.dir/my_vector.cpp.o"
+  "/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.cpp" "/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o"
+  "/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.cpp" "/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
