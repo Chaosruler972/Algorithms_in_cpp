@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.cpp
+singleton.h
+/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.h
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.h
+iostream
+-
+memory
+-
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/main.cpp
+iostream
+-
+Design Patterns/Singleton/singleton.h
+/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.h
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.cpp
+cv_practice.h
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.h
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.h
+iostream
+-
+thread
+-
+condition_variable
+-
+mutex
+-
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.cpp
+boost/assert.hpp
+-
+my_vector.h
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.h
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.h
+iostream
+-
+
