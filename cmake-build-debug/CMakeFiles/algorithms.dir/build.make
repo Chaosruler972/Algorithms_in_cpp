@@ -81,95 +81,43 @@ CMakeFiles/algorithms.dir/main.cpp.o.provides: CMakeFiles/algorithms.dir/main.cp
 CMakeFiles/algorithms.dir/main.cpp.o.provides.build: CMakeFiles/algorithms.dir/main.cpp.o
 
 
-CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o: CMakeFiles/algorithms.dir/flags.make
-CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o: ../self_implentations/vector/my_vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o -c /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.cpp
+CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o: CMakeFiles/algorithms.dir/flags.make
+CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o: ../self_implentations/matrix/matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o -c /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/matrix.cpp
 
-CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.cpp > CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.i
+CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/matrix.cpp > CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.i
 
-CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.cpp -o CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.s
+CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/matrix.cpp -o CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.s
 
-CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.requires:
+CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.requires:
 
-.PHONY : CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.requires
+.PHONY : CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.requires
 
-CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.provides: CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.requires
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.provides.build
-.PHONY : CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.provides
+CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.provides: CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.requires
+	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.provides.build
+.PHONY : CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.provides
 
-CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.provides.build: CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o
-
-
-CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o: CMakeFiles/algorithms.dir/flags.make
-CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o: ../Design\ Patterns/Singleton/singleton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o -c "/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.cpp"
-
-CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.cpp" > CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.i
-
-CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.cpp" -o CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.s
-
-CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.requires:
-
-.PHONY : CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.requires
-
-CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.provides: CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.requires
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.provides.build
-.PHONY : CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.provides
-
-CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.provides.build: CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o
-
-
-CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o: CMakeFiles/algorithms.dir/flags.make
-CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o: ../self_implentations/threadding_sync/cv_practice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o -c /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.cpp
-
-CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.cpp > CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.i
-
-CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.cpp -o CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.s
-
-CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.requires:
-
-.PHONY : CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.requires
-
-CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.provides: CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.requires
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.provides.build
-.PHONY : CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.provides
-
-CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.provides.build: CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o
+CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.provides.build: CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o
 
 
 # Object files for target algorithms
 algorithms_OBJECTS = \
 "CMakeFiles/algorithms.dir/main.cpp.o" \
-"CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o" \
-"CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o" \
-"CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o"
+"CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o"
 
 # External object files for target algorithms
 algorithms_EXTERNAL_OBJECTS =
 
 algorithms: CMakeFiles/algorithms.dir/main.cpp.o
-algorithms: CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o
-algorithms: CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o
-algorithms: CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o
+algorithms: CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o
 algorithms: CMakeFiles/algorithms.dir/build.make
 algorithms: CMakeFiles/algorithms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable algorithms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chaosruler/Desktop/Algorithms_in_cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable algorithms"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/algorithms.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,9 +126,7 @@ CMakeFiles/algorithms.dir/build: algorithms
 .PHONY : CMakeFiles/algorithms.dir/build
 
 CMakeFiles/algorithms.dir/requires: CMakeFiles/algorithms.dir/main.cpp.o.requires
-CMakeFiles/algorithms.dir/requires: CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o.requires
-CMakeFiles/algorithms.dir/requires: CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o.requires
-CMakeFiles/algorithms.dir/requires: CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o.requires
+CMakeFiles/algorithms.dir/requires: CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o.requires
 
 .PHONY : CMakeFiles/algorithms.dir/requires
 

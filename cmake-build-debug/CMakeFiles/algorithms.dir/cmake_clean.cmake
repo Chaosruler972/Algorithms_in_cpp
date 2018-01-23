@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/algorithms.dir/main.cpp.o"
-  "CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o"
-  "CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o"
-  "CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o"
+  "CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o"
   "algorithms.pdb"
   "algorithms"
 )

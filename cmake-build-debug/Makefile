@@ -123,33 +123,6 @@ algorithms/fast:
 	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/build
 .PHONY : algorithms/fast
 
-Design_Patterns/Singleton/singleton.o: Design_Patterns/Singleton/singleton.cpp.o
-
-.PHONY : Design_Patterns/Singleton/singleton.o
-
-# target to build an object file
-Design_Patterns/Singleton/singleton.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.o
-.PHONY : Design_Patterns/Singleton/singleton.cpp.o
-
-Design_Patterns/Singleton/singleton.i: Design_Patterns/Singleton/singleton.cpp.i
-
-.PHONY : Design_Patterns/Singleton/singleton.i
-
-# target to preprocess a source file
-Design_Patterns/Singleton/singleton.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.i
-.PHONY : Design_Patterns/Singleton/singleton.cpp.i
-
-Design_Patterns/Singleton/singleton.s: Design_Patterns/Singleton/singleton.cpp.s
-
-.PHONY : Design_Patterns/Singleton/singleton.s
-
-# target to generate assembly for a file
-Design_Patterns/Singleton/singleton.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/Design_Patterns/Singleton/singleton.cpp.s
-.PHONY : Design_Patterns/Singleton/singleton.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -177,59 +150,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-self_implentations/threadding_sync/cv_practice.o: self_implentations/threadding_sync/cv_practice.cpp.o
+self_implentations/matrix/matrix.o: self_implentations/matrix/matrix.cpp.o
 
-.PHONY : self_implentations/threadding_sync/cv_practice.o
-
-# target to build an object file
-self_implentations/threadding_sync/cv_practice.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.o
-.PHONY : self_implentations/threadding_sync/cv_practice.cpp.o
-
-self_implentations/threadding_sync/cv_practice.i: self_implentations/threadding_sync/cv_practice.cpp.i
-
-.PHONY : self_implentations/threadding_sync/cv_practice.i
-
-# target to preprocess a source file
-self_implentations/threadding_sync/cv_practice.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.i
-.PHONY : self_implentations/threadding_sync/cv_practice.cpp.i
-
-self_implentations/threadding_sync/cv_practice.s: self_implentations/threadding_sync/cv_practice.cpp.s
-
-.PHONY : self_implentations/threadding_sync/cv_practice.s
-
-# target to generate assembly for a file
-self_implentations/threadding_sync/cv_practice.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/threadding_sync/cv_practice.cpp.s
-.PHONY : self_implentations/threadding_sync/cv_practice.cpp.s
-
-self_implentations/vector/my_vector.o: self_implentations/vector/my_vector.cpp.o
-
-.PHONY : self_implentations/vector/my_vector.o
+.PHONY : self_implentations/matrix/matrix.o
 
 # target to build an object file
-self_implentations/vector/my_vector.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.o
-.PHONY : self_implentations/vector/my_vector.cpp.o
+self_implentations/matrix/matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.o
+.PHONY : self_implentations/matrix/matrix.cpp.o
 
-self_implentations/vector/my_vector.i: self_implentations/vector/my_vector.cpp.i
+self_implentations/matrix/matrix.i: self_implentations/matrix/matrix.cpp.i
 
-.PHONY : self_implentations/vector/my_vector.i
+.PHONY : self_implentations/matrix/matrix.i
 
 # target to preprocess a source file
-self_implentations/vector/my_vector.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.i
-.PHONY : self_implentations/vector/my_vector.cpp.i
+self_implentations/matrix/matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.i
+.PHONY : self_implentations/matrix/matrix.cpp.i
 
-self_implentations/vector/my_vector.s: self_implentations/vector/my_vector.cpp.s
+self_implentations/matrix/matrix.s: self_implentations/matrix/matrix.cpp.s
 
-.PHONY : self_implentations/vector/my_vector.s
+.PHONY : self_implentations/matrix/matrix.s
 
 # target to generate assembly for a file
-self_implentations/vector/my_vector.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/vector/my_vector.cpp.s
-.PHONY : self_implentations/vector/my_vector.cpp.s
+self_implentations/matrix/matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/self_implentations/matrix/matrix.cpp.s
+.PHONY : self_implentations/matrix/matrix.cpp.s
 
 # Help Target
 help:
@@ -240,18 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... algorithms"
-	@echo "... Design_Patterns/Singleton/singleton.o"
-	@echo "... Design_Patterns/Singleton/singleton.i"
-	@echo "... Design_Patterns/Singleton/singleton.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... self_implentations/threadding_sync/cv_practice.o"
-	@echo "... self_implentations/threadding_sync/cv_practice.i"
-	@echo "... self_implentations/threadding_sync/cv_practice.s"
-	@echo "... self_implentations/vector/my_vector.o"
-	@echo "... self_implentations/vector/my_vector.i"
-	@echo "... self_implentations/vector/my_vector.s"
+	@echo "... self_implentations/matrix/matrix.o"
+	@echo "... self_implentations/matrix/matrix.i"
+	@echo "... self_implentations/matrix/matrix.s"
 .PHONY : help
 
 

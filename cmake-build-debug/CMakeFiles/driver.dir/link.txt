@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp -g    CMakeFiles/cuda_compile_1.dir/self_implentations/amount_of_threads_on_performance/cuda_compile_1_generated_kernel.cu.o  -o driver /opt/cuda/lib64/libcudart_static.a -pthread -ldl /usr/lib/librt.so 

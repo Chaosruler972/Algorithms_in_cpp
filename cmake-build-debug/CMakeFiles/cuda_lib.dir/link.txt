@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fopenmp -g  -shared -Wl,-soname,libcuda_lib.so -o libcuda_lib.so CMakeFiles/cuda_lib.dir/self_implentations/amount_of_threads_on_performance/cuda_lib_generated_kernel.cu.o /opt/cuda/lib64/libcudart_static.a -pthread -ldl /usr/lib/librt.so 

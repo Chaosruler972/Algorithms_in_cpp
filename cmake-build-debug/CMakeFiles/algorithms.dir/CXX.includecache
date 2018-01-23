@@ -6,43 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.cpp
-singleton.h
-/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.h
-
-/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.h
-iostream
--
-memory
--
-
 /home/chaosruler/Desktop/Algorithms_in_cpp/main.cpp
+self_implentations/matrix/main.h
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/main.h
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/main.h
+matrix.h
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/matrix.h
+chrono
+-
+vector
+-
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/matrix.cpp
+matrix.h
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/matrix.h
+
+/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/matrix/matrix.h
 iostream
 -
-Design Patterns/Singleton/singleton.h
-/home/chaosruler/Desktop/Algorithms_in_cpp/Design Patterns/Singleton/singleton.h
-
-/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.cpp
-cv_practice.h
-/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.h
-
-/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/threadding_sync/cv_practice.h
-iostream
+omp.h
 -
-thread
+random
 -
-condition_variable
--
-mutex
--
-
-/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.cpp
-boost/assert.hpp
--
-my_vector.h
-/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.h
-
-/home/chaosruler/Desktop/Algorithms_in_cpp/self_implentations/vector/my_vector.h
-iostream
+cstdlib
 -
 
