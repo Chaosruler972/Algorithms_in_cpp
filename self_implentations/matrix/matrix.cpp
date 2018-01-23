@@ -35,10 +35,12 @@ matrix::matrix(const matrix &other) // copy ctor
     this->_n_threads =(unsigned int) omp_get_num_procs();
     this->distribution = std::uniform_int_distribution<int>(0,SOFT_RAND_MAX);
     reinit(other.N);
-    int i, j;
-    for (i = 0; i<this->N; i++)
+
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds) collapse(2)
+    for (auto i = 0; i<this->N; i++)
     {
-        for (j = 0; j<this->N; j++)
+        for (auto j = 0; j<this->N; j++)
         {
             this->arr[i][j] = other.arr[i][j];
         }
@@ -59,6 +61,9 @@ matrix &matrix::operator=(const matrix &other)
         this->delete_arr();
         this->reinit(other.N);
     }
+
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds) collapse(2)
     for (auto i = 0; i<this->N; i++)
     {
         for (auto j = 0; j<this->N; j++)
@@ -76,6 +81,8 @@ matrix &matrix::operator=(const matrix &other)
  */
 void matrix::delete_arr()
 {
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds)
     for (auto i = 0; i<this->N; i++)
         delete[] this->arr[i];
     delete[] this->arr;
@@ -93,6 +100,8 @@ void matrix::reinit(int n)
     for (auto i = 0; i<this->N; i++) // allocate inner array
         this->arr[i] = new int[n];
 
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds) collapse(2)
     for (auto i = 0; i<this->N; i++)
     {
         for (auto j = 0; j<this->N; j++)
@@ -112,13 +121,20 @@ bool matrix::operator==(const matrix &right)
 {
     if (this->N != right.N)
         return false;
+    bool result = true;
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds) collapse(2)
     for (auto i = 0; i<this->N; i++)
     {
         for (auto j = 0; j<this->N; j++)
+        {
             if (this->arr[i][j] != right.arr[i][j])
-                return false;
+            {
+                result = false;
+            }
+        }
     }
-    return true;
+    return result;
 }
 
 /**
@@ -166,6 +182,8 @@ matrix matrix::operator+(const matrix &right)
     if (this->N != right.N)
         return matrix();
     matrix matrix1(this->N);
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds) collapse(2)
     for (auto i = 0; i<this->N; i++)
     {
         for (auto j = 0; j<this->N; j++)
@@ -184,7 +202,10 @@ matrix matrix::operator-(const matrix &right)
 {
     if (this->N != right.N)
         return matrix();
+
     matrix matrix1(this->N);
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds) collapse(2)
     for (auto i = 0; i<this->N; i++)
     {
         for (auto j = 0; j<this->N; j++)
@@ -205,19 +226,50 @@ matrix matrix::operator*(const matrix& other)
         return matrix();
     matrix mult1(this->N);
 
-
+    /**
+     * Initating amount of threads, since many threaded operations is done here
+     * @author Chaosruler972
+     */
     int trds = this->_n_threads;
-#pragma omp parallel for num_threads(trds)
+
+    /**
+     * Initating a new array of mutexes on dynamic memory
+     * to make sure mutable writes is not going to happen
+     * @author Chaosruler972
+     */
+    auto arr = new std::mutex*[this->N];
+    #pragma omp parallel for num_threads(trds)
+    for(auto i=0; i<this->N;i++)
+        arr[i] = new std::mutex[this->N];
+
+
+    /**
+     * Multipication operation by itself
+     * @author Chaosruler972
+     */
+    #pragma omp parallel for num_threads(trds) collapse(3)
     for (auto i = 0; i<this->N; i++)
     {
         for (auto  j = 0; j<this->N; j++)
         {
             for (auto k = 0; k<this->N; k++)
             {
+                arr[i][j].lock();
                 mult1.arr[i][j] += this->arr[i][k] * other.arr[k][j];
+                arr[i][j].unlock();
             }
         }
     }
+
+    /**
+     * Deleting mutex array, not needed after operation
+     * @author Chaosruler972
+     */
+    #pragma omp parallel for num_threads(trds)
+    for(auto i=0; i<this->N;i++)
+       delete[] arr[i];
+    delete[] arr;
+
     return mult1;
 }
 
@@ -274,6 +326,8 @@ int matrix::random_number()
  */
 void matrix::randomize()
 {
+    int trds = this->_n_threads;
+    #pragma omp parallel for num_threads(trds) collapse(2)
     for(auto i=0; i<this->N; i++)
     {
         for(auto j=0; j<this->N; j++)

@@ -10,11 +10,12 @@
  * @author Chaosruler972
  */
 #include <chrono>
+#include <thread>
 using namespace std;
 using namespace chrono;
 
-
-
+#define TIME_TO_WAIT 10
+#define TO_MILLISECONDS 1000
 
 void test(unsigned int N_THREADS, int MAX_MAT_SIZE );
 
@@ -31,6 +32,14 @@ typedef struct test_configuration_unit
     {
         this->MAX_MAT_SIZE = (mat==0) ? 1 : abs(mat);
         this->N_THREADS = threads;
+    }
+    bool operator==(const struct test_configuration_unit& other)
+    {
+        return this->MAX_MAT_SIZE == other.MAX_MAT_SIZE && this->N_THREADS == other.N_THREADS;
+    }
+    bool operator!=(const struct test_configuration_unit& other)
+    {
+        return !this->operator==(other);
     }
 }test_configuration_unit;
 

@@ -69,12 +69,27 @@ int main()
          */
         std::cout << std::endl << std::endl;
 
-        
+
         std::cout << " Running test for configuration " <<
                   " matrices size " << configuration.MAX_MAT_SIZE << " And amount of threads is "
                   << ((configuration.N_THREADS==0 ) ? (unsigned int) omp_get_num_procs() : configuration.N_THREADS)
                 << std::endl;
         test(configuration.N_THREADS,configuration.MAX_MAT_SIZE);
+
+
+        /**
+         * Wait a while after computation for threadding mechanism to settle down
+         * and handling to be done
+         * maximized for 10 seconds to increase global affect
+         * @author Chaosruler972
+         */
+        std::cout << std::endl << "Testing is done." << std::endl;
+        if(configuration != tests.back() )
+        {
+             std::cout << "Waiting " << TIME_TO_WAIT << " seconds after test finish before doing the next test..";
+            std::this_thread::sleep_for(std::chrono::milliseconds(TIME_TO_WAIT*TO_MILLISECONDS));
+            std::cout << std::endl << "Waiting is done, moving to next test" << std::endl;
+        }
     }
 
     return 0;

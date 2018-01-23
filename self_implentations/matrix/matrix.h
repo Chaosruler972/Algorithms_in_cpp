@@ -7,7 +7,7 @@
 #include <iostream>
 #include <omp.h>
 #include <random>
-#include <cstdlib>
+#include <mutex>
 
 #define SOFT_RAND_MAX 1000
 
