@@ -51,4 +51,5 @@ typedef struct test_configuration_unit
 #include <vector>
 
 
+
 #endif //ALGORITHMS_MAIN_H
